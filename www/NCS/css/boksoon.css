@@ -9,13 +9,14 @@ body, ul, li, div, section, dl, dt, dd, ol, p, h1, h2, h3, h4, h5, h6, header, f
   letter-spacing: -1px;
 }
 
-.bgBasic{background-color:#F7EAD4}
+.bgBoksoon{background-color:#F7EAD4}
 
 a{text-decoration: none;}
 ul, li, ol, dl, dt, dd{list-style: none;}
 img{ border: none;}
 
-#hd{margin: 20px;}
+/* /////////header///////// */
+#hd{padding: 20px; background-color:#F7EAD4}
 #hd .hdWrap{position: relative;}
 #hd .hdLogo{position: absolute; float: left;
       left: 0;
@@ -26,13 +27,70 @@ img{ border: none;}
 #hd .hdLogo img{ width:100%}
 
 #gnb{ text-align: center;}
-#gnb li{  display: inline-block; vertical-align: middle;
-      padding: 0 25px; }
+#gnb li{ display: inline-block; vertical-align: middle;
+      padding: 0 20px; }
 #gnb li a{ display: block; color:black; font-weight: 600;
         font-size: 1.4em; line-height: 2;}
 
 .hdPop{float: right; position: absolute; right: 0; top:0;}
 .hdPop button{border: none; background:transparent}
 .hdPop button:focus{ outline:none; }
+.hdPop .xi-close{display: none;}
 
 #gnb li a:hover, .hdPop button i:hover{color:#fba713; text-decoration: none;}
+
+/* /////////Header Slider///////// */
+.owl-theme .owl-controls .owl-buttons div{
+  color:#333;
+  background:transparent}
+
+.slider-carousel {
+  padding: 0;
+  color: white;
+  background-color: #fff;
+}
+.slider-carousel .item {
+  background-color: #fff;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding: 50px 55px;
+  text-align: left;
+}
+.slider-carousel .item .project-details {
+  padding: 0;
+}
+@media (min-width: 992px) {
+  .slider-carousel .item {
+    padding: 155px 55px 155px;
+    text-align: left;
+    min-height: 100%;
+  }
+.slider-carousel .item .project-details .project-name {
+  display: block;
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+.slider-carousel .item .project-details .project-description {
+  display: block;
+  padding: 10px 0;
+  font-size: 22px;
+  line-height: 36px;
+}
+
+
+/* .sliderBtn {  버튼 하나하나 넣어줘야하나?
+  display: inline-block;
+  line-height: 25px;
+  height: 25px;
+  text-align: center;
+  padding: 0 20px;
+  width: auto;
+  background-color: #000;
+  text-decoration: none;
+  color: #fff;
+} */
